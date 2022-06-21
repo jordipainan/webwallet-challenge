@@ -50,3 +50,7 @@ A tentative roadmap could be:
 ### Features (Ethereum)
 
 *TBD*
+
+### Useful resources
+
+- [Current wallet used in vocdoni.app](https://github.com/vocdoni/vocdoni-ui/blob/main/hooks/use-wallet.tsx)
