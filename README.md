@@ -8,7 +8,7 @@ The wallet is build on top of [dvote-js](https://github.com/vocdoni/dvote-js) an
 
 A tentative roadmap could be:
 - [ ] Support Vocdoni transactions (first iteration)
-- [ ] Support login with metamask (second iteration)
+- [ ] Support login with metamask and walletconnect (second iteration)
 
 ### Main ideas
 
