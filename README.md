@@ -7,13 +7,12 @@ The Vocdoni wallet is a web browser based wallet that allows to sign and send Vo
 The wallet is build on top of [dvote-js](https://github.com/vocdoni/dvote-js) and its initial purpose is to be integrated and used with the [vocdoni-ui](https://github.com/vocdoni/vocdoni-ui).
 
 A tentative roadmap could be:
-- [ ] Support Vocdoni transactions
-- [ ] Support EVM transactions
-- [ ] Support hardware wallets
+- [ ] Support Vocdoni transactions (first iteration)
+- [ ] Support login with metamask (second iteration)
 
 ### Main ideas
 
-- Do not imagine something like metamask.
+- The wallet should be an in-browser component (not an extension such as metamask)
 - Imagine something integrated in the vocdoni-ui, a npm package than you can import everywhere and can be integrated into any web application.
 - For having a visual idea of how will look like for the user, go to [vocdoni.app](https://vocdoni.app) and create an organization/entity. Basically you are creating an ethereum wallet and the metadata of the organization is sent to a gateway that sends it to IPFS, a wallet is created in-memory on the browser (your private key is stored encrypted) using [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) and a backend automatically sends some Gnosis Chain tokens to the same address created. It is like a web2 user profile but it is supercharged with web3 capabilities.
 - The idea is to make the usage of the wallet totally transparent to the end user unless some kind of expert mode is enabled.
@@ -21,9 +20,9 @@ A tentative roadmap could be:
 
 ## Bootstraping the development
 
-1. [ ] Using the vocdoni.app UI codebase and dvote-js, create a Vochain account within the flow of creating an organization/entity.
-2. [ ] In the entity's public page, retrieve the information of the Account: nonce, balance, delegates, infoURI.
-3. [ ] In the update entity page, update the description of the entity and update the account infoURI on the vochain via SetAccountInfo transaction.
+1. [ ] Using the vocdoni.app UI codebase and dvote-js, create a Vochain account.
+2. [ ] Retrieve the information of the Account: nonce, balance, delegates, infoURI.
+3. [ ] Update the account infoURI on the vochain via SetAccountInfo transaction.
 
 ### Features (Vochain)
 
@@ -31,25 +30,14 @@ A tentative roadmap could be:
 - [ ] Create account 
 - [ ] Import account
 - [ ] Export account
-- [ ] Sign message
-- [ ] Verify message
-- [ ] Lock / Unlock account
 - [ ] Send transactions
     - [ ] Get current transaction cost
-    - [ ] Ajust the transaction cost
     - [ ] Get/Set account info
     - [ ] Get/Set account delegates
     - [ ] Send tokens
     - [ ] Create faucet payload
     - [ ] Collect faucet tx
-    - [ ] Create process
-    - [ ] Set process
-- [ ] Multi-account support
 
-
-### Features (Ethereum)
-
-*TBD*
 
 ### Useful resources
 
