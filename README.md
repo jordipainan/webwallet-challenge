@@ -24,12 +24,21 @@ A tentative roadmap could be:
 2. [ ] Retrieve the information of the Account: nonce, balance, delegates, infoURI.
 3. [ ] Update the account infoURI on the vochain via SetAccountInfo transaction.
 
+### TODO
+
+- [ ] Implement the Vochain features in dvote-js as an exportable package.
+- [ ] Make the proper modifications to the vocdoni.app UI that allows the end user to use the features described below.
+
 ### Features (Vochain)
 
 - [ ] Get network info (e.g chainID)
 - [ ] Create account 
 - [ ] Import account
 - [ ] Export account
+- [ ] Sign message
+- [ ] Verify message
+- [ ] Lock / Unlock account
+- [ ] Select the endpoint to connect with
 - [ ] Send transactions
     - [ ] Get current transaction cost
     - [ ] Get/Set account info
@@ -37,7 +46,11 @@ A tentative roadmap could be:
     - [ ] Send tokens
     - [ ] Create faucet payload
     - [ ] Collect faucet tx
-
+    - [ ] Create process
+    - [ ] Set process
+        - [ ] Status
+        - [ ] Census
+    - [ ] Send vote
 
 ### Useful resources
 
